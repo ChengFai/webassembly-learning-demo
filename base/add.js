@@ -27,13 +27,10 @@ loadWasm("./add.wasm")
         var r = 0;
         for(var i = 0;i<10000;i++){
             i32a[i]=Math.ceil(Math.random()*100);
-            r+=i32a[i];
+            r += i32a[i];
         }
         console.log("js计算结果：",r);
         console.log("wasm计算结果：",ins.exports.test(0,10000));
-
-
-
 
     })
 
